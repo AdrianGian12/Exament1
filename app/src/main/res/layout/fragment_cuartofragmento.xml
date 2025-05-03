@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1122"
+    android:padding="16dp"
+    tools:context=".cuartofragmento">
+    <Button
+        android:id="@+id/btnEditarPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar perfil"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#BB86FC"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <ImageView
+        android:id="@+id/ivFotoPerfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zuricata"
+        android:background="@drawable/circle_background"
+        android:clipToOutline="true" />
+
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola, Soy Juan Diego"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/ivFotoPerfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvUnion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se unió en 2015\n14 Reviews"
+        android:textColor="#AAAAAA"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_below="@id/tvNombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp" />
+
+
+    <TextView
+        android:id="@+id/tvAcercaDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acerca de"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvUnion"
+        android:layout_marginTop="24dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvAcercaDe"
+        android:layout_marginTop="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/location"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vive en Chiclayo"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutIdiomas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layoutUbicacion"
+        android:layout_marginTop="8dp">
+
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_language"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habla Inglés, Francés y español"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSobreMi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre mí"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/layoutIdiomas"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#DDDDDD"
+        android:textSize="14sp"
+        android:layout_below="@id/tvSobreMi"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="4dp"
+        android:textAlignment="viewStart"
+        android:text="Soy Juan Diego, un apasionado por la tecnología, los idiomas y los viajes. Me gusta descubrir nuevas culturas y conectar con personas a través de experiencias compartidas. Vivo en Chiclayo y siempre estoy explorando nuevas formas de crecer personal y profesionalmente.\n\nEn mi tiempo libre, disfruto aprender nuevos idiomas, caminar por la naturaleza y capturar paisajes con mi cámara. Me considero curioso, perseverante y comprometido con todo lo que hago." />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="236dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/tvDescripcion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#AA90C5"
+        android:text="Cerrar Sesión"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

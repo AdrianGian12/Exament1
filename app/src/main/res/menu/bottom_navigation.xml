@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/primerfragmento"
+    android:icon="@drawable/iconhome"
+    android:title="Inicio"/>
+    <item
+        android:id="@+id/segundofragmento"
+        android:icon="@drawable/corazon"
+        android:title="Favoritos"/>
+    <item
+        android:id="@+id/tercerofragmento"
+        android:icon="@drawable/iconmap"
+        android:title="Explorar"/>
+    <item
+        android:id="@+id/cuartofragmento"
+        android:icon="@drawable/iconuser"
+        android:title="Perfil"/>
+</menu>
